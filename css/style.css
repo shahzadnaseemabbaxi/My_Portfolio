@@ -70,6 +70,10 @@ nav {
     margin: auto;
 }
 
+nav img {
+    height: 100px;
+}
+
 nav ul {
     display: flex;
     list-style: none;
