@@ -17,9 +17,8 @@
     <!-- header section -->
 
     <header>
-
       <nav>
-              <img src="/img/logo.png" alt="Shahzad Naseem " />
+        <img src="/img/logo.png" alt="Shahzad Naseem " />
         <ul>
           <li>
             <a href="#home">Home</a>
@@ -37,6 +36,13 @@
             <a href="#contact">Contact</a>
           </li>
         </ul>
+
+        <div id="mobile-menu" class="menu-toggle">
+          <!-- <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span> -->
+          <i class="fas fa-bars"></i>
+        </div>
       </nav>
     </header>
 
@@ -48,7 +54,7 @@
       <div class="hero-content">
         <h2>Hi! Iam shahzad Naseem abbasi</h2>
         <p>Software Engineer | Full Stack Developer | Accessibility Engineer</p>
-        <a href="#" class="btn btn-light"> View My Work </a>
+        <a href="#projects" class="btn btn-light"> View My Work </a>
       </div>
     </section>
 
@@ -57,7 +63,7 @@
     <!-- About section -->
 
     <section id="about" class="about">
-      <div class="about-content">
+      <div class="about-content section-spacing">
         <h2 class="heading-title">About Me</h2>
 
         <div class="about-details">
@@ -71,12 +77,12 @@
               front-end and back-end technologies. With a strong foundation in
               programming languages such as JavaScript and Python, I have
               successfully developed and deployed numerous web applications. My
-              experience includes working with frameworks like Angular,
-              and Node.js, as well as databases like MongoDB and MySQL. I am
+              experience includes working with frameworks like Angular, and
+              Node.js, as well as databases like MongoDB and MySQL. I am
               dedicated to creating efficient, scalable, and user-friendly
               solutions that meet client needs and exceed expectations.
             </p>
-            
+
             <p>My Expertise includes:</p>
             <ul>
               <li>Front-end Development: Angular</li>
@@ -101,31 +107,31 @@
 
     <!-- Skills Section -->
 
-    <section id="skills" class="skills">
+    <section id="skills" class="skills section-spacing">
       <div>
         <h2 class="heading-title">Skills</h2>
         <div class="skills-grid">
-          <div class="skill-card">
+          <div class="skill-card card-ui">
             <i class="fa-brands fa-html5"></i>
             <h3>HTML5</h3>
           </div>
-          <div class="skill-card">
+          <div class="skill-card card-ui">
             <i class="fa-brands fa-css3"></i>
             <h3>Css3</h3>
           </div>
-          <div class="skill-card">
+          <div class="skill-card card-ui">
             <i class="fa-brands fa-js"></i>
             <h3>JavaScript</h3>
           </div>
-          <div class="skill-card">
+          <div class="skill-card card-ui">
             <i class="fa-brands fa-angular"></i>
             <h3>Angular</h3>
           </div>
-          <div class="skill-card">
+          <div class="skill-card card-ui">
             <i class="fa-brands fa-node-js"></i>
             <h3>Node.js</h3>
           </div>
-          <div class="skill-card">
+          <div class="skill-card card-ui">
             <i class="fa-brands fa-python"></i>
             <h3>Python</h3>
           </div>
@@ -135,47 +141,52 @@
 
     <!-- Project Section -->
 
-    <section id="projects">
-      <div>
-        <div>
-          <img src="https://placehold.co/400" alt="Project1" />
+    <section id="projects" class="projects section-spacing">
+      <h2 class="heading-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card card-ui">
+          <img src="/img/E-comerce.png" alt="Project1" />
           <h3>E-commerce Website</h3>
           <p>
             Developed a full-featured e-commerce website using React and
             Node.js, allowing users to browse products, add items to their cart,
             and securely checkout.
           </p>
-          <a href="#">View Project</a>
+          <a href="#" class="btn btn-dark">View Project</a>
         </div>
 
-        <div>
-          <img src="https://placehold.co/400" alt="Project3" />
+        <div class="project-card card-ui">
+          <img src="/img/Ai-chatbot.webp" alt="Project3" />
           <h3>Ai Chatbot</h3>
           <p>
             Developed an AI-powered chatbot using Python and TensorFlow,
             enabling users to interact with intelligent conversational agents.
           </p>
-          <a href="#">View Project</a>
+          <a
+            href="/project/Ai-chatbot-project/create_chatbot_using_python-main/chatbot.py"
+            class="btn btn-dark"
+            >View Project</a
+          >
         </div>
 
-        <div>
-          <img src="https://placehold.co/400" alt="Project2" />
+        <div class="project-card card-ui">
+          <img src="/img/portfolio.png" alt="Project2" />
           <h3>Portfolio Website</h3>
           <p>
             Developed a responsive portfolio website using HTML, CSS, and
             JavaScript, showcasing projects and skills in an elegant and
             user-friendly interface.
           </p>
-          <a href="#">View Project</a>
+          <a href="http://127.0.0.1:5500" class="btn btn-dark">View Project</a>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <div>
+    <section id="contact" class="contact section-spacing">
+      <h2 class="heading-title">Contact Me</h2>
+      <div class="contact-content">
         <p>
           Feel free to reach out to me for any inquiries, collaborations, or
           opportunities. I am always open to connecting with like-minded
@@ -183,20 +194,14 @@
         </p>
         <form>
           <input id="name" type="text" placeholder="Your Name" required />
-          <input
-            id="email"
-            name="email"
-            type="email"
-            placeholder="Your Email"
-            required
-          />
+          <input name="email" type="email" placeholder="Your Email" required />
           <textarea
             id="message"
             name="message"
             placeholder="Your message"
             required
           ></textarea>
-          <button type="submit">Send Message</button>
+          <button type="submit" class="btn btn-dark">Send Message</button>
         </form>
       </div>
     </section>
@@ -204,11 +209,15 @@
     <!--Footer Section -->
 
     <footer>
-      <p>&copy; 2026 shad anselm abbas. All rights reserved.</p>
-      <div>
-        <a href="#"><i></i></a>
-        <a href="#"><i></i></a>
-        <a href="#"><i></i></a>
+      <p>&copy; 2026 Shahzad Naseem. All rights reserved.</p>
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/shahzad-naseem-004883289"
+          target="_blank"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a href="https://github.com/shahzadnaseemabbaxi"><i class="fab fa-github"></i></a>
+        <a href="https://x.com/xhahzadNaseem"><i class="fab fa-twitter"></i></a>
       </div>
     </footer>
   </body>
